@@ -5,7 +5,7 @@ require "sequel/extensions/migration"
 
 module OpenHood
   module Rake
-    class SequelTask < ::Rake::TaskLib
+    class ConsoleTask < ::Rake::TaskLib
       def base_path
         File.expand_path('.')
       end

@@ -4,11 +4,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "openhood_sinatra_tasks"
+    gem.name = "sinatra_rake_tasks"
     gem.summary = %Q{OpenHood Sinatra Rake Tasks}
     gem.description = %Q{Default tasks we're using in our apps}
     gem.email = "team@openhood.com"
-    gem.homepage = "http://github.com/openhood/openhood_sinatra_tasks"
+    gem.homepage = "http://github.com/openhood/sinatra_rake_tasks"
     gem.authors = ["Jonathan Tron", "Joseph Halter"]
     gem.add_dependency "rspec", '~> 1.2.6'
     gem.add_dependency "cucumber", '~> 0.3.97'

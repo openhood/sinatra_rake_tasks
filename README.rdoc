@@ -1,4 +1,4 @@
-= openhood_sinatra_tasks
+= sinatra_rake_tasks
 
 Description goes here.
 
@@ -15,4 +15,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2009 Jonathan Tron. See LICENSE for details.
+Copyright (c) 2009 Joseph Halter & Jonathan Tron. See LICENSE for details.

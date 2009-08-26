@@ -15,7 +15,7 @@ module OpenHood
       end
 
       def config
-        environment = ENV["ENV"] || "development"
+        environment = ENV["RACK_ENV"] || "development"
         @config ||= YAML.load_file(File.join(base_path, "config", "#{environment}.yml"))
       end
 

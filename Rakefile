@@ -10,8 +10,10 @@ begin
     gem.email = "team@openhood.com"
     gem.homepage = "http://github.com/openhood/openhood_sinatra_tasks"
     gem.authors = ["Jonathan Tron", "Joseph Halter"]
-    gem.add_development_dependency "rspec"
-    gem.add_development_dependency "cucumber"
+    gem.add_dependency "rspec", '~> 1.2.6'
+    gem.add_dependency "cucumber", '~> 0.3.97'
+    gem.add_dependency "sequel", '>= 3.2.0'
+    gem.add_dependency "bond"
     gem.add_development_dependency "yard"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end

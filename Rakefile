@@ -6,11 +6,12 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "openhood_sinatra_tasks"
     gem.summary = %Q{OpenHood Sinatra Rake Tasks}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "jonathan@tron.name"
-    gem.homepage = "http://github.com/JonathanTron/openhood_sinatra_tasks"
-    gem.authors = ["Jonathan Tron"]
+    gem.description = %Q{Default tasks we're using in our apps}
+    gem.email = "team@openhood.com"
+    gem.homepage = "http://github.com/openhood/openhood_sinatra_tasks"
+    gem.authors = ["Jonathan Tron", "Joseph Halter"]
     gem.add_development_dependency "rspec"
+    gem.add_development_dependency "cucumber"
     gem.add_development_dependency "yard"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end

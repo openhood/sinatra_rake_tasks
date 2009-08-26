@@ -7,7 +7,7 @@ module OpenHood
   module Rake
     class SequelTask < ::Rake::TaskLib
       def base_path
-        '.'
+        File.expand_path('.')
       end
 
       def path

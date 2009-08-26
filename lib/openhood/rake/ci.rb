@@ -8,7 +8,7 @@ module OpenHood
         namespace :ci do 
           desc 'Run all features and specs' 
           task :all do 
-            RACK_ENV = ENV['RACK_ENV'] = 'test' 
+            ENV['RACK_ENV'] = 'test'
             error = 0 
 
             include Gem if RUBY_VERSION.to_f >= 1.9

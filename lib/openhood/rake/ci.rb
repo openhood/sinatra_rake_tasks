@@ -4,6 +4,8 @@ require 'rake/tasklib'
 module OpenHood
   module Rake
     class CITask < ::Rake::TaskLib
+      include Gem if RUBY_VERSION.to_f >= 1.9
+      
       def initialize
         namespace :ci do 
           desc 'Run all features and specs' 
@@ -11,7 +13,6 @@ module OpenHood
             ENV['RACK_ENV'] = 'test'
             error = 0 
 
-            include Gem if RUBY_VERSION.to_f >= 1.9
             rake_bin = "#{File.join(Config::CONFIG['bindir'], 'rake')} "
 
             ["#{rake_bin} spec", "#{rake_bin} features"].each do |command|

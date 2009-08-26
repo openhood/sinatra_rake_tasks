@@ -8,7 +8,6 @@ module OpenHood
     class CucumberTask < ::Cucumber::Rake::Task
       def initialize(name=:features)
         super(name) do |t|
-          # Fix pb with latest Cucumber...
           t.fork = true
           opts = []
           opts << ['--format', (ENV['CUCUMBER_FORMAT'] || 'pretty'), '-r', 'features']

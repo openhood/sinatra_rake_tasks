@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
      "lib/openhood/rake/rspec.rb",
      "lib/openhood/rake/sequel.rb",
      "lib/sinatra_rake_tasks.rb",
+     "sinatra_rake_tasks.gemspec",
      "spec/spec_helper.rb"
   ]
   s.has_rdoc = true

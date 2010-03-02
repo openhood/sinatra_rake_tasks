@@ -1,14 +1,12 @@
 require 'rake'
 require 'rake/tasklib'
-require 'spec/rake/spectask'
+require 'rspec/core/rake_task'
 
 module OpenHood
   module Rake
-    class SpecTask < ::Spec::Rake::SpecTask
+    class SpecTask < ::Rspec::Core::RakeTask
       def initialize(name=:spec)
-        super(name) do |t|
-          t.spec_opts = ['--colour', '--format progress', '--loadby mtime', '--reverse']
-        end
+        super(name)
       end
     end
   end
